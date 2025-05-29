@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 body {
     margin: 0px;
     padding: 0px;
+    font-family: "Lexend", sans-serif;
 }
 #container {
     position: absolute;
@@ -19,17 +21,25 @@ body {
     align-items: center;
     flex-direction: row;
 }
-#prompts {
+#titlehead {
     width: 100%;
     height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
-#prompt {
-    font-size: 80px;
+#title {
+    font-size: 60px;
     font-weight: 500;
+}
+#score {
+    font-size: 30px;
+    font-weight: 600;
+}
+#moves {
+    font-size: 70px;
+    font-weight: 600;
 }
 .option {
     position: relative;
@@ -44,7 +54,7 @@ body {
     justify-content: center;
     transition: background-color 0.4s;
 }
-.option:hover {
+.optionclk {
     width: 30%;
     height: 55%;
     margin: 0px;

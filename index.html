@@ -8,15 +8,18 @@
 </head>
 <body>
     <div id="container">
-        <div id="prompts">
-            <header id="prompt">sdk</header>
+        <div id="titlehead">
+            <header id="title">PLAYER WINS</header>
+            <header id="score">8  /  9</header>
+            <header id="moves">🪨 ‎ ‎ ‎ ‎ ‎ ‎ ‎ ✂️</header>
         </div>
         <div id="options">
-            <div class="option" id="roc">🪨</div>
-            <div class="option" id="pap">📄</div>
-            <div class="option" id="sis">✂️</div>
+            <div class="option" id="roc" onclick="clicking(0)">🪨</div>
+            <div class="option" id="pap" onclick="clicking(1)">📄</div>
+            <div class="option" id="sis" onclick="clicking(2)">✂️</div>
         </div>
         
     </div>
 </body>
+<script src="main.js"></script>
 </html>
