@@ -29,13 +29,31 @@ function clicking(type) {
 
 function test(play, com) {
 
-    if (play == com) {
+    if (play == 0 && com == 0) {
         return 0
     }
-    if (play > com - 1) {
+    if (play == 0 && com == 1) {
+        return 2
+    }
+    if (play == 0 && com == 2) {
         return 1
     }
-    if (play - 1 < com) {
+    if (play == 1 && com == 0) {
+        return 1
+    }
+    if (play == 1 && com == 1) {
+        return 0
+    }
+    if (play == 1 && com == 2) {
         return 2
+    }
+    if (play == 2 && com == 0) {
+        return 2
+    }
+    if (play == 2 && com == 1) {
+        return 1
+    }
+    if (play == 2 && com == 2) {
+        return 0
     }
 }
